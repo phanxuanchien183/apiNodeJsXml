@@ -51,7 +51,7 @@ app.post('/convertXML', (req, res) => {
             })
         })
     })
-    var exportData=[]
+    var exportData = []
     for (var i = 0; i < arrData.length; i += 6) {
         // console.log("Working with: " + arr.slice(i, i + 4));
         exportData.push(arrData.slice(i, i + 6))
@@ -63,5 +63,6 @@ app.post('/convertXML', (req, res) => {
 
 // starting the server
 app.listen(3001, () => {
+    res.send('hello word');
     console.log('listening on port 3001');
 });
